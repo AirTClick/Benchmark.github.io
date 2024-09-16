@@ -138,7 +138,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We use the Quality Diversity (QD) algorithm with Neural Cellular Automata (NCA) to generate benchmark maps for Multi-Agent Path Finding (MAPF) algorithms. Previously, MAPF algorithms are tested using fixed, human-designed benchmark maps. However, such fixed benchmark maps have several problems. First, these maps may not cover all the potential failure scenarios for the algorithms. Second, when comparing different algorithms, fixed benchmark maps may introduce bias leading to unfair comparisons between algorithms. In this work, we take advantage of the QD algorithm and NCA with different objectives and diversity measures to generate maps with patterns to comprehensively understand the performance of MAPF algorithms and be able to make fair comparisons between two MAPF algorithms to provide further information on the selection between two algorithms. Empirically, we employ this technique to generate diverse benchmark maps to evaluate and compare the behavior of different types of MAPF algorithms such as bounded-suboptimal algorithms, suboptimal algorithms, and reinforcement-learning-based algorithms. Through both single-planner experiments and comparisons between algorithms, we identify patterns where each algorithm excels and detect disparities in runtime or success rates between different algorithms.
+            We take advantage of the QD algorithm and NCA with different objectives and diversity measures to generate maps with patterns to comprehensively understand the performance of MAPF algorithms and be able to make fair comparisons between two MAPF algorithms to provide further information on the selection between two algorithms. Empirically, we employ this technique to generate diverse benchmark maps to evaluate and compare the behavior of different types of MAPF algorithms such as bounded-suboptimal algorithms, suboptimal algorithms, and reinforcement-learning-based algorithms. Through both single-planner experiments and comparisons between algorithms, we identify patterns where each algorithm excels and detect disparities in runtime or success rates between different algorithms.
           </p>
         </div>
       </div>
@@ -245,11 +245,13 @@
           Archive for LTF with representative maps.
         </h2>
       </div>
+      <div class="content">
       <p>CBS performs well on maps with evenly distributed short corridor components with more space in between or with a large portion of connecting empty space and it struggles on maps with long corridors and one-tile entries.<br>
         EECBS performs well on maps with a large portion of connecting empty space and struggles on maps with long corridors and one-tile entries.<br>
         PBS performs well on maps with long corridors and struggles on maps with large chunks of empty space.<br>
         PIBT performs well on maps with large chunks of empty space and struggles on maps with long corridors and one-entry spaces.<br>
         LTF performs well on maps with large chunks of empty space and struggles on maps with long corridors and one-entry spaces.<br>
+      </div>
       </p>
   </div>
 </div>
@@ -282,9 +284,11 @@
           Archive for PIBT vs LTF with representative maps.
         </h2>
       </div>
+      <div class="content">
       <p>EECBS outperforms PBS on maps with large chunks of empty space. On the other hand, PBS outperforms EECBS on maps with long corridors.<br>
         PIBT outperforms LTF on maps with more one-entry spaces. On the other hand, LTF outperforms PIBT on maps with more emtpy space between corridors.<br>
       </p>
+    </div>
   </div>
 </div>
 </div>
