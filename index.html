@@ -43,6 +43,8 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </head>
 <body>
 
@@ -178,9 +180,10 @@
             We adapt the previous work[1] to use CMA-MAE and NCA to generate diverse benchmark maps with the objective and measures computed by running MAPF algorithms.
           </p>
           <img src="static/images/CMA-MAE_NCA_benchmark_gen.jpg" alt="Overview of our approach of using CMA-MAE optimize diverse NCAs to generate benchmark maps."/>
-          <p><strong>Objectives:</strong> One algorihtm Experiments: average CPU runtime: $f(\xv) = t_{\phi}(\xv), \phi \in \{\text{CBS}, \text{EECBS}, \text{PBS}\}$, 
-            Regularized Success Rate (RSR): $r_{\phi}(\xv) = \sum_{i=1}^{N_e} RSR_{\phi}^{(i)}(\xv), \phi \in \{\text{PIBT}, \text{LTF}\}$
-            Two-algorithm Experiments: 
+          <p><strong>Objectives:</strong> One algorihtm Experiments: average CPU runtime: $f(x) = t_{\phi}(x), \phi \in \{\text{CBS}, \text{EECBS}, \text{PBS}\}$<br>
+            Regularized Success Rate (RSR): $r_{\phi}(x) = \sum_{i=1}^{N_e} RSR_{\phi}^{(i)}(x), \phi \in \{\text{PIBT}, \text{LTF}\}$<br>
+            Two-algorithm Experiments: EECBS & PBS: $f(x) = |t_{\text{EECBS}}(x) - t_{\text{PBS}}(x)|$ <br>
+            PIBT & LTF: $f(x) = |r_{\text{PIBT}}(x) - r_{\text{LTF}}(x)|$
         </div>
       </div>
     </div>
