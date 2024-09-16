@@ -204,7 +204,6 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div class="columns is-centered">
       <h2 class="title is-3">One Algorithm Experiments</h2>
       <img src="static/images/table1.png" alt="One algorithm experiments setup"/>
       <h2 class="subtitle has-text-centered">
@@ -246,6 +245,12 @@
           Archive for LTF with representative maps.
         </h2>
       </div>
+      <p>CBS performs well on maps with evenly distributed short corridor components with more space in between or with a large portion of connecting empty space and it struggles on maps with long corridors and one-tile entries.<br>
+        EECBS performs well on maps with a large portion of connecting empty space and struggles on maps with long corridors and one-tile entries.<br>
+        PBS performs well on maps with long corridors and struggles on maps with large chunks of empty space.<br>
+        PIBT performs well on maps with large chunks of empty space and struggles on maps with long corridors and one-entry spaces.<br>
+        LTF performs well on maps with large chunks of empty space and struggles on maps with long corridors and one-entry spaces.<br>
+      </p>
   </div>
 </div>
 </div>
@@ -257,7 +262,6 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div class="columns is-centered">
       <h2 class="title is-3">Two Algorithm Experiments</h2>
       <img src="static/images/table2.png" alt="Two algorithm experiments setup"/>
       <h2 class="subtitle has-text-centered">
@@ -278,6 +282,9 @@
           Archive for PIBT vs LTF with representative maps.
         </h2>
       </div>
+      <p>EECBS outperforms PBS on maps with large chunks of empty space. On the other hand, PBS outperforms EECBS on maps with long corridors.<br>
+        PIBT outperforms LTF on maps with more one-entry spaces. On the other hand, LTF outperforms PIBT on maps with more emtpy space between corridors.<br>
+      </p>
   </div>
 </div>
 </div>
@@ -285,85 +292,21 @@
 <!-- End image carousel -->
 
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
 
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@misc{qian2024qualitydiversityapproachautomatically,
+        title={A Quality Diversity Approach to Automatically Generate Multi-Agent Path Finding Benchmark Maps}, 
+        author={Cheng Qian and Yulun Zhang and Varun Bhatt and Matthew Christopher Fontaine and Stefanos Nikolaidis and Jiaoyang Li},
+        year={2024},
+        eprint={2409.06888},
+        archivePrefix={arXiv},
+        primaryClass={cs.MA},
+        url={https://arxiv.org/abs/2409.06888}, 
+  }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
