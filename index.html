@@ -254,63 +254,45 @@
 <!-- End image carousel -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Two Algorithm Experiments</h2>
-      <img src="static/images/table2.png" alt="Two algorithm experiments setup"/>
-      <h2 class="subtitle has-text-centered">
-        Two algorithm experiments setup
-      </h2>
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/EECBS_PBS_new_final (1).png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          EECBS outperforms PBS on maps with large chunks of empty space. On the other hand, PBS outperforms EECBS on maps with long corridors.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/LTF_PIBT_ffinal (1).png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          PIBT outperforms LTF on maps with more one-entry spaces. On the other hand, LTF outperforms PIBT on maps with more emtpy space between corridors.
-        </h2>
-      </div>
-  </div>
-</div>
-</div>
-</section>
-
-<!-- End image carousel -->
-
-
-<!-- NEW: Map Gallery Section -->
+<!-- Map Gallery Section for Five Algorithms -->
 <section class="section" id="map-gallery">
   <div class="container is-max-desktop">
     <h2 class="title is-3">Map Gallery</h2>
-    <p>Upload your map images below to view them in the gallery.</p>
-    <form id="uploadForm" enctype="multipart/form-data">
-      <div class="file has-name is-boxed">
-        <label class="file-label">
-          <input class="file-input" type="file" id="mapUpload" accept="image/*" multiple>
-          <span class="file-cta">
-            <span class="file-icon">
-              <i class="fas fa-upload"></i>
-            </span>
-            <span class="file-label">Choose files…</span>
-          </span>
-          <span class="file-name">No files uploaded</span>
-        </label>
+    <p>Below are representative maps for our five MAPF algorithms.</p>
+    <div class="columns is-multiline">
+      <div class="column" style="flex: 0 0 20%;">
+        <figure class="image">
+          <img src="static/images/CBS_final (1).png" alt="CBS Map">
+        </figure>
+        <h3 class="subtitle has-text-centered">CBS</h3>
       </div>
-    </form>
-    <div id="mapGallery" class="columns is-multiline">
-      <!-- Uploaded map images will be displayed here -->
+      <div class="column" style="flex: 0 0 20%;">
+        <figure class="image">
+          <img src="static/images/EECBS_ffinal (1).png" alt="EECBS Map">
+        </figure>
+        <h3 class="subtitle has-text-centered">EECBS</h3>
+      </div>
+      <div class="column" style="flex: 0 0 20%;">
+        <figure class="image">
+          <img src="static/images/pbs_final (1).png" alt="PBS Map">
+        </figure>
+        <h3 class="subtitle has-text-centered">PBS</h3>
+      </div>
+      <div class="column" style="flex: 0 0 20%;">
+        <figure class="image">
+          <img src="static/images/PIBT_final (1).png" alt="PIBT Map">
+        </figure>
+        <h3 class="subtitle has-text-centered">PIBT</h3>
+      </div>
+      <div class="column" style="flex: 0 0 20%;">
+        <figure class="image">
+          <img src="static/images/LTF_1 (1).png" alt="LTF Map">
+        </figure>
+        <h3 class="subtitle has-text-centered">LTF</h3>
+      </div>
     </div>
   </div>
 </section>
-<!-- End Map Gallery Section -->
 
 <!-- JavaScript for Map Gallery -->
 <script>
