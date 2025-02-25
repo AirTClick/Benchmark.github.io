@@ -286,7 +286,64 @@
 <!-- End image carousel -->
 
 
+<!-- NEW: Map Gallery Section -->
+<section class="section" id="map-gallery">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Map Gallery</h2>
+    <p>Upload your map images below to view them in the gallery.</p>
+    <form id="uploadForm" enctype="multipart/form-data">
+      <div class="file has-name is-boxed">
+        <label class="file-label">
+          <input class="file-input" type="file" id="mapUpload" accept="image/*" multiple>
+          <span class="file-cta">
+            <span class="file-icon">
+              <i class="fas fa-upload"></i>
+            </span>
+            <span class="file-label">Choose files…</span>
+          </span>
+          <span class="file-name">No files uploaded</span>
+        </label>
+      </div>
+    </form>
+    <div id="mapGallery" class="columns is-multiline">
+      <!-- Uploaded map images will be displayed here -->
+    </div>
+  </div>
+</section>
+<!-- End Map Gallery Section -->
 
+<!-- JavaScript for Map Gallery -->
+<script>
+  document.getElementById('mapUpload').addEventListener('change', function(e) {
+    const fileInput = e.target;
+    const files = fileInput.files;
+    const gallery = document.getElementById('mapGallery');
+    gallery.innerHTML = ''; // Clear previous images
+    const fileNameSpan = document.querySelector('.file-name');
+    
+    if (files.length > 0) {
+      fileNameSpan.textContent = Array.from(files).map(file => file.name).join(', ');
+    } else {
+      fileNameSpan.textContent = 'No files uploaded';
+    }
+    
+    Array.from(files).forEach(file => {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const img = document.createElement('img');
+        img.src = e.target.result;
+        img.alt = file.name;
+        img.style.maxWidth = '100%';
+        img.style.height = 'auto';
+        const column = document.createElement('div');
+        column.className = 'column is-one-quarter';
+        column.appendChild(img);
+        gallery.appendChild(column);
+      };
+      reader.readAsDataURL(file);
+    });
+  });
+</script>
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
